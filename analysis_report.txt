@@ -1,0 +1,77 @@
+==================================================
+FIRST 5 RECORDS
+==================================================
+   Student_ID  Age  Gender  Study_Hours  Attendance  Marks
+0           1   18    Male            2          75     65
+1           2   19  Female            3          80     70
+2           3   20    Male            4          85     75
+3           4   18  Female            5          90     82
+4           5   21    Male            1          65     55
+
+Dataset Shape: (20, 6)
+
+Dataset Info:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 20 entries, 0 to 19
+Data columns (total 6 columns):
+ #   Column       Non-Null Count  Dtype 
+---  ------       --------------  ----- 
+ 0   Student_ID   20 non-null     int64
+ 1   Age          20 non-null     int64 
+ 2   Gender       20 non-null     object
+ 3   Study_Hours  20 non-null     int64 
+ 4   Attendance   20 non-null     int64 
+ 5   Marks        20 non-null     int64 
+dtypes: int64(5), object(1)
+memory usage: 1.1+ KB
+None
+
+Missing Values:
+Student_ID     0
+Age            0
+Gender         0
+Study_Hours    0
+Attendance     0
+Marks          0
+dtype: int64
+
+Duplicate Rows: 0
+
+Statistical Summary
+       Student_ID       Age  Study_Hours  Attendance      Marks
+count    20.00000  20.00000    20.000000    20.00000  20.000000
+mean     10.50000  19.80000     3.750000    84.15000  76.200000
+std       5.91608   1.43637     1.517442     8.91052  11.283896
+min       1.00000  18.00000     1.000000    65.00000  55.000000
+25%       5.75000  18.75000     2.750000    77.50000  67.500000
+50%      10.50000  20.00000     4.000000    85.50000  76.000000
+75%      15.25000  21.00000     5.000000    91.25000  85.750000
+max      20.00000  22.00000     6.000000    97.00000  94.000000
+
+Correlation Matrix
+             Student_ID       Age  Study_Hours  Attendance     Marks
+Student_ID     1.000000  0.161035     0.184676    0.247107  0.284617
+Age            0.161035  1.000000     0.482945    0.405466  0.460466
+Study_Hours    0.184676  0.482945     1.000000    0.983835  0.980541
+Attendance     0.247107  0.405466     0.983835    1.000000  0.991644
+Marks          0.284617  0.460466     0.980541    0.991644  1.000000
+
+KEY INSIGHTS
+--------------------------------------------------
+Average Marks: 76.2
+Highest Marks: 94
+Lowest Marks: 55
+
+Average Marks by Gender:
+Gender
+Female    81.5
+Male      70.9
+Name: Marks, dtype: float64
+
+Correlation with Marks:
+Marks          1.000000
+Attendance     0.991644
+Study_Hours    0.980541
+Age            0.460466
+Student_ID     0.284617
+Name: Marks, dtype: float64
